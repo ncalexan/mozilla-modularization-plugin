@@ -4,8 +4,8 @@
 
 plugins {
     `java-gradle-plugin`
-    kotlin("jvm") version "2.1.20"
-    kotlin("plugin.serialization") version "2.1.20"
+    kotlin("jvm") version "2.3.20"
+    kotlin("plugin.serialization") version "2.3.20"
 }
 
 java {
@@ -15,9 +15,9 @@ java {
 }
 
 dependencies {
-    compileOnly("com.android.tools.build:gradle-api:8.13.0")
+    compileOnly("com.android.tools.build:gradle-api:8.13.2")
     implementation(gradleKotlinDsl())
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.10.0")
     implementation("com.tngtech.archunit:archunit:1.4.1")
     implementation("org.yaml:snakeyaml:2.2")
 }
